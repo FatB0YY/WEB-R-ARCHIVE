@@ -1,0 +1,67 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: honeydew;
+}
+
+label {
+    margin-top: 20px;
+}
+
+input {
+    color: #000;
+}
+
+input[type='radio'] {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input[type='checkbox'] {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input[type='reset'] {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input[type='image'] {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input[type='button'] {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input[type='submit'] {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.avatar {
+    max-width: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    display: block;
+}
+
+button {
+    color: #000;
+}
+
+input:focus {
+    -webkit-box-shadow: 9px 2px 22px 0px rgba(255, 0, 255, 0.78);
+    -moz-box-shadow: 9px 2px 22px 0px rgba(255, 0, 255, 0.78);
+    box-shadow: 9px 2px 22px 0px rgba(255, 0, 255, 0.78);
+}

@@ -1,0 +1,744 @@
+/* ----- Fonts ----- */
+
+@font-face {
+  font-family: 'MuseoSansCyrl100';
+  src: url('../fonts/MuseoSansCyrl-100.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-100.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-100.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-100.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MuseoSansCyrl300';
+  src: url('../fonts/MuseoSansCyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MuseoSansCyrl500';
+  src: url('../fonts/MuseoSansCyrl-500.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-500.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-500.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-500.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MuseoSansCyrl700';
+  src: url('../fonts/MuseoSansCyrl-700.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-700.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-700.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-700.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'MuseoSansCyrl900';
+  src: url('../fonts/MuseoSansCyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/MuseoSansCyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/MuseoSansCyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Natasha';
+  src: url('../fonts/Natasha.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Natasha.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Natasha.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Natasha.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Natasha.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Natasha.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* ----- Спецификации----- */
+body{
+   font-family: 'MuseoSansCyrl300', sans-serif ;
+	margin: 0px;
+   padding: 0px;
+   letter-spacing: 0.12em;
+   line-height: 1.5em;
+   color:#fff;
+}
+button{
+   font-family: 'MuseoSansCyrl300', sans-serif ;
+   cursor: pointer;
+}
+div, p, input, button, form, span, a, ul, li {
+   box-sizing: border-box;
+}
+*{
+   box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Natasha',sans-serif ;
+   letter-spacing: 0.11em;
+}
+ul, li {
+   display: block;
+   padding: 0px;
+   margin: 0px;
+}
+p{
+   font-family: 'MuseoSansCyrl300',sans-serif ;
+   padding: 0px;
+   margin: 0px;
+   letter-spacing: 0.12em;
+}
+.about__title, .skills__title, .works__title{
+   line-height: 37px;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/* ----- HEADER ----- */
+.header{
+   display: flex;
+   flex-direction: column;
+   padding-top: 50px;
+   padding-bottom: 90px;
+   background: url(../img/background1.png) no-repeat center top;
+}
+
+.header__hat{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 295px;
+}
+.header__logo span{
+   font-family: 'MuseoSansCyrl100';
+   font-size: 17px;
+   text-transform: uppercase;
+}
+.header__logo{
+   font-family: 'MuseoSansCyrl900';
+   font-size: 17px;
+   text-transform: uppercase;
+}
+.header__menu{
+   margin:0 auto;
+   display: flex;
+ 
+}
+.header__menu li a{
+   margin: 0px 20px 0px 20px;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-family: 'MuseoSansCyrl900';
+   font-size: 15px;
+   color: #fff;
+   border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.header__link{
+   text-decoration: none;
+   font-family: 'MuseoSansCyrl300';
+   font-size: 13px;
+   color: #fff;
+   text-transform: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.header__text{
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 265px;
+}
+.header__title{
+   text-transform: uppercase;
+   font-family: 'Natasha';
+   font-size: 49px;
+   margin-bottom: 15px;
+   line-height: 49px;
+}
+.header__subtitle{
+   text-transform: uppercase;
+   font-family: 'MuseoSansCyrl100';
+   font-size: 29px;
+}
+a{
+   text-decoration: none;
+   color: #fff;
+}
+.header__pointer{
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   margin: 0 auto;
+   display: flex;
+   height: 38px;
+   width: 38px;
+   border: solid 1px #fff;
+}
+.header__icon{
+   margin-bottom: 4px;
+   letter-spacing: 0em;
+}
+
+/* ----- 1 Экран ----- */
+.about{
+   padding-bottom: 95px;
+   padding-top: 80px;
+}
+.about__title{
+   font-family: 'Natasha';
+   font-size: 37px;
+   color:#000;
+   margin-bottom: 73px;
+}
+.about__wrapper{
+   display: flex;
+   justify-content: space-between;
+}
+.background-about{
+   width: 433px;
+}
+.background-about__title{
+   color: #6d6f69;
+   margin-bottom: 40px;
+   font-family: 'Natasha';
+   font-size: 22px;
+   text-transform: uppercase;
+}
+.background-about__text{
+   font-family: 'MuseoSansCyrl300';
+   font-size: 15px;
+   color: #000;
+   letter-spacing: 0.02em;
+   line-height: 27px;
+}
+.background-about__text_one, .background-about__text_two{
+   margin-bottom: 28px;
+}
+.communication-about__wrapper{
+   display: flex;
+   justify-content: space-between;
+   width: 470px;
+}
+.communication-about__link{
+   color: #204d15;
+   font-family: 'MuseoSansCyrl300';
+   font-size: 14px;
+   text-decoration: none;
+   margin-bottom: 10px;
+   border-bottom: 1px solid #fff;
+}
+.communication-about__links{
+   display: flex;
+   flex-direction: column;
+}
+.communication-about__title{
+   color: #6d6f69;
+   font-family: 'Natasha';
+   font-size: 22px;
+   text-transform: uppercase;
+   margin-bottom: 35px;
+}
+.communication-about__text{
+   color: #797a77;
+   font-family: 'MuseoSansCyrl300';
+   font-size: 14px;
+   letter-spacing: 0.02em;
+}
+.communication-about__link_fl{
+   margin-bottom: 10px;
+}
+.communication-about__icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 63px;
+   height: 63px;
+   background-color: #eef1ed;
+   color: #204d15;
+   border-radius: 50%;
+   margin-right: 15px;
+   font-size: 25px;
+   
+}
+.communication-about__wrapper_icon{
+   width: 256px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.merits-about__title{
+   color: #6d6f69;
+   font-family: 'Natasha';
+   font-size: 22px;
+   margin-bottom: 58px;
+}
+.progress-about{
+   display: flex;
+   justify-content:space-between;
+   margin-bottom: 68px;
+   margin-left: 15px;
+   width: 430px;
+}
+.progress-about__text{
+   color: #000;
+   font-family: 'MuseoSansCyrl300';
+   font-size: 12px;
+   text-transform: uppercase;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   line-height: 1.4em;
+   letter-spacing: 0.02em;
+}
+.progress-about__project{
+   width: 71px;
+   height: 71px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   border: 2px solid #3d6433;
+   color: #3d6433;
+   font-family: 'MuseoSansCyrl100';
+   font-size: 20px;
+   margin-bottom: 35px;
+   transform: rotate(45deg);
+   position: relative;
+}
+.progress-about__column{
+   width: 111px;
+}
+.progress-about__project span{
+   transform: rotate(-45deg);
+   font-style: italic;
+   font-family: 'MuseoSansCyrl100';
+   font-size: 20px;
+}
+.progress-about__project:after{
+   content: '';
+   display: block;
+   position: absolute;
+   width: 55px;
+   height: 55px;
+   border: 1px solid #acce93;
+   left: 5px;
+   top: 5px;
+}
+.progress-about__column{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+/* ----- 2 Экран ----- */
+.skills{
+   padding-bottom: 82px;
+}
+.skills__title{
+   font-family: 'Natasha';
+   font-size: 37px;
+   color:#000;
+   margin-bottom: 63px;
+}
+.skills__wrapper{
+   display: flex;
+   justify-content: space-between;
+   width: 900px;
+}
+.skills__skill{
+   display: flex;
+   align-items: center;
+   width: 200px;
+}
+.skills__percent{
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   border: 2px solid #3d6433;
+   color: #3d6433;
+   font-family: 'MuseoSansCyrl100';
+   font-size: 13px;
+   border-radius: 50%;
+   margin-right: 25px;
+   position: relative;
+}
+.skills__percent:after{
+   content: '';
+   display: block;
+   position: absolute;
+   width: 46px;
+   height: 46px;
+   border-radius: 50%;
+   border: 1px solid #acce93;
+}
+.skills__text{
+   font-family: 'MuseoSansCyrl900';
+   font-size: 15px;
+   color: #000;
+   text-transform: uppercase;
+}
+
+
+/* ----- 3 Экран ----- */
+
+.works__title{
+   font-family: 'Natasha';
+   font-size: 37px;
+   color:#000;
+   margin-bottom: 63px;
+}
+.route-list__item {
+	width: 296px;
+	transition: all 0.5s ease;
+}
+
+.route-list__overlay {
+	background: rgba(0,0,0,0.64);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.route-list__wrap {
+	position: relative;
+}
+
+.route-list__item:hover .route-list__overlay  {
+	opacity: 1;
+}
+
+.route-list{
+   display: flex;
+   justify-content: space-between;
+}
+
+.route-list__img {
+	display: block;
+   margin: 0 auto;
+   max-width: 100%;
+}
+
+.route-list__title{
+   color: #fff;
+   font-family: 'MuseoSansCyrl900';
+   font-size: 15px;
+   text-transform: uppercase;
+   letter-spacing: 0.02em;
+}
+.route-list__subtitle{
+   color: #fff;
+   font-family: 'MuseoSansCyrl300';
+   font-size: 13px;
+   width: 67px;
+   border-bottom: 1px solid #797a77;
+}
+.route-list__text{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer__future{
+   color:#6d6f69;
+   font-family: 'MuseoSansCyrl300';
+   font-size: 11px;
+   text-transform: uppercase;
+   letter-spacing: 0.14em;
+}
+
+
+
+.footer{
+   padding: 120px 0px;
+}
+
+
+
+/* ----- hover, focus ----- */
+.header__menu li a:hover{
+   border-bottom: solid 1px #676965;
+}
+.communication-about__link:hover{
+   border-bottom: solid 1px #becbbb;
+}
+.header__link:hover{
+   border-bottom: solid 1px #676965;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width:992px) {
+   .container{
+      width: 700px;
+   }
+   .header__title{
+     font-size: 46px;
+   }
+   .route-list__item{
+      width: 30%;
+   }
+   .route-list__img{
+      width: 100%;
+   }
+   .skills__wrapper{
+      width: 100%;
+   }
+   .skills__skill{
+      margin-right: 15px;
+   }
+   .route-list__title{
+      font-size: 14px;
+   }
+   .background-about{
+      width: 45%;
+   }
+   .merits-about{
+      width: 45%;
+   }
+  
+  
+   .progress-about{
+      width: 100%;
+      flex-wrap: wrap;
+      margin-left: 0px;
+      margin-bottom: 34px;
+   }
+   .progress-about__column_center{
+      margin: 0 auto;
+      margin-top:25px;
+   }
+   .communication-about__wrapper{
+      display: block;
+   }
+   .merits-about__title, .communication-about{
+      text-align: center;
+      margin: 0 auto;
+   }
+   .communication-about__links{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+   } 
+   .merits-about__title{
+      margin: 0 auto;
+      margin-bottom: 60px;
+   }
+   .communication-about__wrapper_icon{
+      margin: 0 auto;
+   }
+   .communication-about__wrapper{
+      width: 100%;
+   }
+   
+    
+}
+@media screen and (max-width:768px) {
+   .container{
+      width: 520px;
+   }
+   .progress-about__column_center{
+      margin: 0 auto;
+      margin-top: 25px;
+   }
+   .header__menu{
+      width: 100%;
+      display: none;
+   }
+   .about__title, .skills__title, .works__title, .background-about__title, .footer__future{
+      text-align: center;
+   }
+   .about__wrapper{
+      flex-direction: column;
+      align-items: center;
+   }
+   .background-about{
+      width: 75%;
+      margin-bottom: 73px;
+   }
+   .footer{
+      padding: 60px 0px;
+   }
+   .header__hat{
+      margin-bottom: 195px;
+   }
+   .header__text{
+      margin-bottom: 165px;
+   }
+   .header__title{ 
+      font-size: 34px;
+   }
+   .header__subtitle{
+      font-size: 25px;
+   }
+   .merits-about{
+      width: 50%;
+   }
+    .route-list__title{
+      font-size: 13px;
+     font-family: 'MuseoSansCyrl300'; 
+   }
+   .progress-about{
+       margin-bottom: 80px;
+   }
+   .route-list__subtitle{
+      font-size: 12px;
+   }
+   .skills__wrapper{
+      flex-wrap: wrap;
+   }
+   .skills__skill{
+      margin-top: 20px;
+   }
+   .route-list__item{
+      width: 45%;
+   }
+   .route-list{
+      flex-wrap: wrap;
+      align-items: center;
+   }
+   .route-list__item_center{
+      margin: 0 auto;
+      margin-top: 37px;
+   }
+   
+}
+
+@media screen and (max-width:540px) {
+   .container{
+      width: 90%;
+   }
+   .progress-about__column_center{
+      margin: 0px;
+   }
+   .header__hat{
+      flex-direction: column;
+   }
+   .header__title{ 
+      font-size: 29px;
+      line-height: 1.5em;
+   }
+   .header__subtitle{
+      font-size: 22px;
+   }
+   .about{
+      padding-top: 0px;
+   }
+   .about__wrapper{
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+   }
+   .background-about{
+      width: 100%;
+      margin-bottom: 33px;
+   }
+   .background-about__text{
+      width: 100%;
+   }
+   .about__title{
+      text-align: center;
+      margin-top: 83px;
+   }
+   .merits-about{
+      width: 100%;
+      margin-top: 80px;
+   }
+   .progress-about{
+   flex-wrap: wrap;
+   }
+   .skills__title{
+      text-align: center;
+   }
+   .skills__wrapper{
+      text-align: center;
+      align-items: center;
+   }
+   .skills__skill{
+      margin: 0 auto;
+      margin-bottom: 15px;
+   }
+   .works__title{
+      text-align: center;
+   }
+   .route-list{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+   }
+   .route-list__item{
+      width: 75%;
+      margin-bottom: 20px;
+   }
+   .route-list__img{
+      width: 100%;
+   }
+   .footer{
+      padding: 40px;
+   }
+   .footer__future{
+      text-align: center;
+   }
+   .progress-about__column_center{
+      margin: 0 auto;
+      margin-top: 25px;
+   }
+}
+@media screen and (max-width:528px) {
+   
+   .progress-about__column_center{
+      margin:0px;
+   }
+   .route-list__item_center{
+      margin: 0 auto;
+      margin-top: 0px;
+   }
+   .header__subtitle{
+      font-size: 21px;
+   }
+   .header__title{
+      font-size:31px;
+   }
+   
+}
+@media screen and (max-width:380px){
+    .progress-about__column{
+       margin: 0 auto;
+       margin-top: 35px;
+    }
+    .progress-about{
+       margin-top: 40px;
+    }
+    .progress-about{
+      flex-direction: column;
+      align-items: center;
+   }
+   .route-list__item:focus .route-list__overlay  {
+   opacity: 1;
+   }
+   .route-list__item:active .route-list__overlay  {
+   opacity: 1;
+   }
+}
+
+}
+
+}

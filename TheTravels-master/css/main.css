@@ -1,0 +1,406 @@
+/* ------ Подключение шрифтов ------ */
+
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url('../fonts/museosanscyrl-300.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-300.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-300.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-300.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Museo Sans 900';
+  src: url('../fonts/museosanscyrl-900.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/museosanscyrl-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/museosanscyrl-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/museosanscyrl-900.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/museosanscyrl-900.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/museosanscyrl-900.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+/* ------ Спецификация ------ */
+
+body {
+	font-family: 'Museo Sans 300', sans-serif;
+	font-size: 18px;
+	color: #3a3244;
+	padding: 0;
+	letter-spacing: 0.06em;
+	margin: 0;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Museo Sans 900';
+}
+
+h1 {
+	font-size: 45px;
+	letter-spacing: 0.32em;
+}
+
+h2 {
+	font-size: 26px;
+	color: #9e96a8;
+	padding-top: 84px;
+	margin-bottom: 48px;
+	letter-spacing: 0.1em;
+}
+
+h3 {
+	color: #9e96a8;
+}
+
+h4 {
+	font-size: 16px;
+	letter-spacing: 0.1em;
+}
+
+h5 {
+	font-size: 10px;
+	letter-spacing: 0.1em;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+.btn {
+	background: #82c83d;
+	color: #fff;
+	border-radius: 100px;
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: 'Museo Sans 900';
+	width: 204px;
+	padding: 20px 0;
+	display: block;
+	margin: 0 auto;
+}
+
+.btn:hover {
+	background: #6fb926;
+	color: #fff;
+}
+
+
+/* ------ Первый экран ------ */
+
+.header {
+	background: #2f2f43 url(../img/first-bg.jpg) no-repeat center top / cover;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	color: #fff;
+	text-align: center;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+}
+
+.offer {
+	margin-top: 170px;
+}
+
+.offer__added {
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.offer__btn {
+	margin-top: 30px;
+}
+
+.arrow-down {
+	font-size: 17px;
+	width: 34px;
+	height: 34px;
+	display: block;
+	background: #fff;
+	color: #181815;
+	border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 31px;
+    margin-top: 212px;
+    letter-spacing: -2px;
+}
+
+.arrow-down:hover {
+	background: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+/* ------ Маршрут ------ */
+
+
+.route-list {
+
+}
+
+.route-list__item {
+	width: 296px;
+	transition: all 0.5s ease;
+}
+
+.route-list__overlay {
+	background: rgba(0,0,0,0.64);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.route-list__wrap {
+	position: relative;
+}
+
+.route-list__item:hover .route-list__overlay  {
+	opacity: 1;
+}
+
+.route-list__img {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 8px 32px rgba(0,0,0,0.32);
+}
+
+.route-list__title {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.route-list__text {
+	margin-bottom: 15px;
+	font-size: 13px;
+	padding-right: 21px;
+}
+
+.route-list__link {
+	font-size: 13px;
+	font-family: 'Museo Sans 900';
+	color: #82c83d;
+}
+
+/* ------ О Code Travel ------ */
+
+.about-wrapper {
+
+}
+
+.about-start {
+	width: 498px;
+}
+
+.about-start__title {
+	margin-bottom: 30px;
+}
+
+.about-start__text {
+	margin-bottom: 1.3em;
+    line-height: 1.3em;
+}
+
+.key {
+	width: 398px;
+}
+
+.key__item {
+	margin-right: 18px;
+	text-align: center;
+	width: 119px;
+	margin-bottom: 28px;
+}
+
+.key__item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.key__list {
+	flex-wrap: wrap;
+	margin-top: 32px;
+}
+
+.key__img {
+	width: 119px;
+	border: 2px solid #82c83d;
+	height: 70px;
+	text-align: center;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.key__img:after {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 101px;
+	height: 55px;
+	border: 1px solid #c3e5a2;
+	left: 6px;
+    top: 5px;
+}
+
+.key__title {
+	line-height: 1.7em;
+}
+
+/* ------ Футер ------ */
+
+.footer {
+	font-size: 12px;
+	color: #9e96a8;
+	padding-bottom: 112px;
+	padding-top: 90px;
+}
+
+.footer-wrap__item {
+	margin-right: 90px;
+}
+
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+	
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 700px;
+	}
+	.route-list__item {
+	    width: 30%;
+	}
+	.route-list__img {
+		width: 100%;
+	}
+	.about-start, .key {
+		width: 45%;
+	}
+	.key__item:nth-child(3n) {
+		margin-right: 18px;
+	}
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 520px;
+	}
+	.about-wrapper {
+		flex-direction: column;
+	}
+	.about-start, .key {
+		width: 100%;
+	}
+	.key {
+		margin-top: 20px;
+	}
+	.footer-wrap {
+		flex-direction: column;
+	}
+	.footer-wrap__item {
+		margin-bottom: 20px;
+	}
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+	h1 {
+		font-size: 26px;
+	}
+	.route-list {
+		flex-direction: column;
+	}
+	.route-list__item {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.key__list {
+		flex-direction: column;
+	}
+	.key__item {
+		margin: 0 auto 30px;
+	}
+	.key__item:nth-child(3n) {
+		margin-right: auto;
+	}
+}
+
+
+
+
+

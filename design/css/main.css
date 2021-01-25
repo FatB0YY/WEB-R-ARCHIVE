@@ -1,0 +1,367 @@
+/* ------ Open Sans Font ------ */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&subset=cyrillic');
+
+/* ------ Specification ------ */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	color: #000000;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	margin: 0;
+	font-size: 14px;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.7em;
+    margin-bottom: 1em;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	padding-bottom: 65px	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 1.3em;
+}
+
+h1 {
+	font-size: 43px;
+}
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 70px
+}
+
+h3 {
+	font-size: 21px;
+	letter-spacing: 0.2em;
+}
+
+h4 {
+	font-size: 16px;
+	letter-spacing: 0.2em;
+}
+
+.heading-no-margin {
+	margin-bottom: 0;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+
+ {
+	outline: none;
+}
+
+.red-font {
+	color: #f34646;
+}
+
+.btn {
+	font-size: 17px;
+	font-weight: 800;
+	color: #f34646;
+	text-transform: uppercase;
+	display: block;
+	width: 272px;
+	padding: 24px 0;
+	border-radius: 5px;
+	border: 1px solid #f34646;
+}
+
+.btn:hover {
+	background: #f34646;
+	color: #fff;
+}
+
+.btn:active {
+	box-shadow: 0 0 25px rgba(0,0,0,0.2) inset;
+}
+
+/* ------ Hero screen ------ */
+
+.header {
+	padding-top: 33px;
+	padding-bottom: 170px;
+}
+
+.logo {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 0.24em;
+	font-weight: 800;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.info {
+	text-transform: uppercase;
+	font-weight: 300;
+
+}
+
+.info__item {
+	
+}
+
+.info__item_left {
+	margin-right: 30px;
+}
+
+.mail {
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 300;
+	border-bottom: 1px solid #d9d9d9;
+	font-size: 12px;
+	margin-left: auto;
+}
+
+.offer {
+	margin-top: 143px;
+}
+
+.offer__title {
+	width: 454px;
+}
+
+.offer__text {
+	font-size: 18px;
+	font-weight: 800;
+	margin-top: 22px;
+	margin-bottom: 53px;
+	line-height: 1.9em;
+}
+
+.wheel {
+	display: block;
+	margin-left: auto;	
+	margin-top: 130px;
+	
+	animation-name: spin;
+    animation-duration: 5600ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+/* ------ Topics ------ */
+
+.topic__text {
+	margin-top: 22px;
+	letter-spacing: 0.016em;
+}
+
+.topic__text_short {
+	letter-spacing: 0.002em;
+}
+
+
+/* ------ Reasons ------ */
+
+.list {
+    margin-left: 47px;
+    margin-top: 20px;
+}
+
+.list__item {
+	position: relative;	
+	margin-bottom: 40px;
+	padding-right: 100px;
+}
+
+.list__index {
+	font-weight: 800;
+	font-size: 47px;
+	position: absolute;
+    left: -57px;
+    top: -25px;
+}
+
+.list__title {
+	
+}
+
+.list__text {
+
+}
+
+.devices {
+	margin-left: 68px;
+}
+
+
+/* ------ Host ------ */
+
+.author {
+	padding-left: 200px;
+    background: url(../img/andrew.jpg) no-repeat left center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.author__title {
+	margin-bottom: 12px;
+}
+
+.author__link {
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 0.24em;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.icons {
+	font-size: 14px;
+	margin-top: 12px;
+}
+
+.icons__item {
+	margin-right: 17px;
+}
+
+.icons__item a {
+	color: #000;
+}
+
+.icons__item i {
+	
+}
+
+.quote {
+	font-style: italic;
+	position: relative;
+	margin-top: 36px;
+	margin-left: 24px;
+	margin-right: 57px;
+}
+
+.quote:before {
+	content:'"';
+	display: block;
+	position: absolute;
+	left: -23px;
+	top: -10px;
+	font-weight: 800;
+	font-size: 22px;
+}
+
+.quote:after {
+	content:'"';
+	display: block;
+	position: absolute;
+	right: -20px;
+	bottom: -10px;
+	font-weight: 800;
+	font-size: 22px;
+}
+
+.details__item {
+	margin-bottom: 33px;
+}
+
+.details__text {
+	margin-bottom: 0;
+}
+
+.details__icon {
+	display: block;
+	font-size: 25px;
+	margin-right: 35px;
+}
+
+
+/* ------ Registration ------ */
+
+.info-text {
+	font-weight: 800;
+	width: 570px;
+	margin-top: 25px;
+}
+
+.start {
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-top: 27px;
+}
+
+.start__item {
+	margin-right: 30px;
+}
+
+.form {
+	margin-top: 50px;
+}
+
+.form__input {
+	border: none;
+	border-bottom: 1px solid #adadad;
+	width: 221px;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	margin-right: 27px;
+}
+
+.form__input:focus {
+	border-bottom: 1px solid #000000;
+}
+
+
+.form__submit {
+	background: none;
+    border: none;
+    padding: 10px;
+}
+
+/* ------ Registration ------ */
+
+.footer {
+	padding: 80px 0;
+}
+
+.credits {
+	font-size: 11px;
+	font-weight: 300;
+	margin-top: 4px;
+}
+
+a.credits {
+	color: #000;
+	border-bottom: 1px dotted #000;
+}

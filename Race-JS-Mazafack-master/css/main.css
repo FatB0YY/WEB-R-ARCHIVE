@@ -1,0 +1,155 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+body {
+  background-color: black; position: relative;
+}
+
+.hide  {
+  display: none;
+}
+.car , .enemy{
+  width: 50px;
+  height: 100px;
+  background: transparent url(../image/player.png) center / cover no-repeat;
+  position: absolute;
+}
+
+
+.gameArea {
+  width: 300px;
+  height: 100%;
+  position: relative;
+  background: #222222;
+  overflow: hidden;
+}
+.line {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  background: white;
+  left: 145px;
+}
+.start {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  z-index: 99;
+  color: white;
+  font-size: 1.5rem;
+  background-color: black;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding: 1rem 0;
+  z-index: 99;
+  font-size: 1.5rem;
+  color: skyblue;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+
+.treesLeft{
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 75px;
+    right: 65%;
+    background-color: rgba(0, 184, 24, 0.116);
+}
+.treesRight{
+    position: absolute;
+    overflow: hidden;
+    width: 75px;
+    height: 100%;
+    left: 65%;
+    background-color: rgba(0, 184, 24, 0.116);
+}
+.block{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.tree{
+    background: url(../image/tree_PNG92782.png) center / cover no-repeat; 
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    position: absolute;
+}
+
+.houseR{
+    background: url(../image/houseR.PNG) center / cover no-repeat; 
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+}
+
+.houseRight{
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 100%;
+    right: 0;
+}
